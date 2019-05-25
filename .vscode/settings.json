@@ -1,0 +1,4 @@
+{
+    "python.linting.pep8Enabled": true,
+    "python.pythonPath": "/home/djonathan/projects/python/data-science-ml/ds-from-scratch/venv/bin/python3.6"
+}
