@@ -1,4 +1,5 @@
 import math
+import sys
 from functools import reduce
 
 
@@ -63,18 +64,20 @@ def distance_with_magnitude(v, w):
     return magnitude(vector_subtract(v, w))
 
 
-a = [1, 2, 3, 4]
-b = [7, 6, 5, 4]
-c = [0, 0, 3, 8]
+if "vector" in sys.argv:
+    print("### vector.py ###")
+    a = [1, 2, 3, 4]
+    b = [7, 6, 5, 4]
+    c = [0, 0, 3, 8]
 
-print(vector_add(a, b))
-print(vector_subtract(a, b))
-print(vector_sum([a, b, c]))
-print(scalar_multiply(5, a))
-print(vector_mean([a, b, c]))
-print(dot(a, b))
-print(sum_of_squares(a))
-print(magnitude(a))
-print(squared_distance(a, b))
-print(distance(a, b))
-print(distance_with_magnitude(a, b))
+    print(vector_add(a, b))
+    print(vector_subtract(a, b))
+    print(vector_sum([a, b, c]))
+    print(scalar_multiply(5, a))
+    print(vector_mean([a, b, c]))
+    print(dot(a, b))
+    print(sum_of_squares(a))
+    print(magnitude(a))
+    print(squared_distance(a, b))
+    print(distance(a, b))
+    print(distance_with_magnitude(a, b))
